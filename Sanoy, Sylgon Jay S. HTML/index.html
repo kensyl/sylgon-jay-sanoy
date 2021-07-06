@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PORTFOLIO HTML</title>
+	<link href="https://fonts.googleapis.com/css?family=lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="nav-wrapper">
+			<div class="left-side">
+				<div class="nav-link-wrapper">
+					<a href="index.html">Home</a>
+				</div>
+				<div class="nav-link-wrapper">
+					<a href="About.html">About</a>
+				</div>
+			</div>
+
+			<div class="rigth-side">
+				<div class="brand name">
+					<div>Sylgon Jay S. Sanoy 3BSCpE-A</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content-wrapper">
+			<div class="portfolio-items-wrapper">
+
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image: url('images/1.jpg')"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logo/1.png">
+						</div>
+						<div class="subtitle">
+							I built the Quip Ecommerce Platform, Named a top 25 invention by the Magazine in 2015
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image: url('images/2.jpg')"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logo/2.png">
+						</div>
+						<div class="subtitle">
+							Coding bootcamp and learning management system.
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image: url('images/3.jpg')"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logo/3.png">
+						</div>
+						<div class="subtitle">
+							Eventbite is the leading event management platform on the web with a millions of individual utilizing their application tp find, register or, and management events in numerous industries.
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image: url('images/4.jpg')"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logo/4.png">
+						</div>
+						<div class="subtitle">
+							Shop Hacker allows you to easily import digital products such as elearning courses, software, and games directly into your ecommerce store.
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image: url('images/5.jpg')"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logo/5.png">
+						</div>
+						<div class="subtitle">
+							Online Tutorial and Productive tips
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image: url('images/6.jpg')"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logo/6.png">
+						</div>
+						<div class="subtitle">
+							Keep track of what you learn every day.
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image: url('images/7.jpg')"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logo/7.png">
+						</div>
+						<div class="subtitle">
+							What you track improves. Dash Track is a journal that makes it easy to track your daily taks and make the most of your time each day.
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image: url('images/8.jpg')"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logo/8.png">
+						</div>
+						<div class="subtitle">
+							Online shop for developer happiness.
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image: url('images/9.jpg')"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logo/9.png">
+						</div>
+						<div class="subtitle">
+							Online Technology Tutorials.
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image: url('images/10.jpg')"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logo/10.png">
+						</div>
+						<div class="subtitle">
+							A Complete child safety system for organization.
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image: url('images/11.jpg')"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logo/11.png">
+						</div>
+						<div class="subtitle">
+							Publish and Share Details Devotionals.
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image: url('images/12.jpg')"></div>
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="images/logo/12.png">
+						</div>
+						<div class="subtitle">
+							Easy way to manage the digital life of your bar or resturant.
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		
+	</div> 
+</body>
+
+<script>
+	const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper')
+	portfolioitems.forEach(portfolioitems=>{
+		portfolioitems.addEventListener('mouseover', () =>{
+			portfolioitems.childNodes[1].classList.add('img-darken');
+		})
+		portfolioitems.addEventListener('mouseout', () =>{
+			portfolioitems.childNodes[1].classList.remove('img-darken');
+		})
+	})
+</script>
+ 
+</html>
